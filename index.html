@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+  <style>
+    a {
+      text-decoration: none
+    }
+
+    .container {
+      width: 1440px;
+      max-height: 5919px;
+
+      background: #fff;
+      margin: 0 auto;
+    }
+
+    .bg-color {
+      background-color: #3BA950;
+      height: 90%;
+      display: flex;
+      max-width: 1280px;
+      padding: 80px 109px;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .bg-color-footer {
+      margin-top: -400px;
+      background-color: #005D55;
+      height: 30vh;
+      display: flex;
+      max-width: 1280px;
+      padding: 80px 109px;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+
+    }
+
+    .banner {
+      max-width: 100%;
+      display: flex;
+    }
+
+    .container_bg_image {
+      display: flex;
+      max-width: 1280px;
+      padding: 80px 109px;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      background-image: url("Backgroung_image.png");
+      background-size: 100% 100%;
+    }
+
+    /* Updated version starts here */
+    .header-container {
+      box-sizing: border-box;
+      display: flex;
+      width: 894px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title-container {
+      display: flex;
+      padding: 24px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: stretch;
+      border: 2px solid var(--bw-white-1, #FFF);
+    }
+
+    .title-txt {
+      color: #FFF;
+      text-align: center;
+      font-feature-settings: 'pwid' on;
+      font-family: Noto Sans TC;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .subtitle-container {
+      display: flex;
+      padding: 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      align-self: stretch;
+      background: var(--bw-white-1, #FFF);
+    }
+
+    .subtitle-txt {
+      color: #B6CC2E;
+      text-align: center;
+      font-feature-settings: 'pwid' on;
+
+      /* NS 24/App NS 24|28 Bold */
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+      /* 116.667% */
+    }
+
+    /* Body Session */
+    .body-container {
+      box-sizing: border-box;
+      display: flex;
+      width: 894px;
+      padding: 24px;
+      justify-content: center;
+      align-items: center;
+      border-right: 4px solid var(--green-green-3, #005D55);
+      border-left: 4px solid var(--green-green-3, #005D55);
+      background: var(--bw-white-4, rgba(255, 255, 255, 0.30));
+    }
+
+    .body-txt {
+      width: 676px;
+      flex-shrink: 0;
+      color: var(--green-green-3, #005D55);
+      text-align: center;
+      font-feature-settings: 'pwid' on;
+      font-family: Noto Sans TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    /* Content Session */
+    .content-container {
+      display: flex;
+      width: 894px;
+      height: 138px;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 210px;
+    }
+
+    .single-content-container {
+      display: flex;
+      padding: 6px 12px;
+      align-items: center;
+      gap: 4px;
+      border-radius: 38px;
+      border: 1px solid var(--green-green-3, #005D55);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), #B6CC2E;
+      box-shadow: 2px 2px 1px 0px #005D55;
+    }
+
+    .content-btn-txt {
+      color: var(--green-green-3, #005D55);
+      text-align: center;
+      font-family: Noto Sans TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .arrow-icon-forward {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top_banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h1 {
+      color: #d9145d;
+      text-align: center;
+      font-feature-settings: "pwid" on;
+      text-shadow: 4px 4px 0px #fff;
+      font-family: DIN Condensed;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 0;
+    }
+
+    .discount_3000 {
+      color: var(--Pink, #d9145d);
+      font-feature-settings: "pwid" on;
+      font-family: DIN Condensed;
+      font-size: 93px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .announcement {
+      display: flex;
+      padding: 40px 80px 60px 80px;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      align-self: stretch;
+      border-radius: 16px;
+      border: 10px solid var(--Golden-Gradient, #e3b73a);
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.7) 0%,
+          rgba(255, 255, 255, 0.5) 100%);
+      box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.12);
+      backdrop-filter: blur(5px);
+    }
+
+    .announcement_txt {
+      width: 676px;
+      color: var(--bw-grey-1, rgba(0, 0, 0, 0.6));
+      text-align: center;
+      font-feature-settings: "pwid" on;
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+    }
+
+    .discount_3000_highlight {
+      color: var(--Pink, #d9145d);
+      font-feature-settings: "pwid" on;
+      font-family: Noto Sans TC;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .button_row {
+      display: flex;
+      height: 40px;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 40px;
+      /* The button row position*/
+      margin-top: -68px;
+      z-index: 1;
+      /*Extend the length of the bg*/
+      margin-bottom: 150px;
+    }
+
+    .cta-button {
+      display: flex;
+      height: 72px;
+      padding: 16px 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 52px;
+      border: 2px solid var(--Brown, #524024);
+      background: var(--bw-white-1, #fff);
+      box-shadow: 4px 4px 0px 0px #524024;
+    }
+
+    .button_txt {
+      color: var(--Brown, #524024);
+      text-align: center;
+      font-feature-settings: "pwid" on;
+      font-family: Noto Sans TC;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+      /* 100% */
+    }
+
+    .cat-white-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 16px;
+      border: 3px solid var(--Brown, #524024);
+      background: linear-gradient(0deg, #fff 0%, #fff 100%), #f4f4f4;
+      box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    #cat-white-box-1 {
+      /*Uplift the white box*/
+      margin-top: -250px;
+    }
+
+    .cat-white-box-txt-container {
+      display: flex;
+      padding: 0px 40px;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+      background: linear-gradient(0deg, #fff 0%, #fff 100%), #f9f0e7;
+      border-radius: 16px;
+    }
+
+    .cat-white-box-txt-header {
+      display: flex;
+      width: 982px;
+      padding: 40px;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 2px solid var(--14-others-divider, rgba(145, 158, 171, 0.24));
+    }
+
+    .highlight-title-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .highlighted-title {
+      color: var(--green-green-3, #005d55);
+      text-align: center;
+      font-feature-settings: "pwid" on;
+      margin: 0;
+
+      /* NS 48 / App NS 48|56 Bold */
+      font-family: Noto Sans TC;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 56px;
+      /* 116.667% */
+    }
+
+    .higlighted-title-green-border {
+      height: 16px;
+      flex-shrink: 0;
+      align-self: stretch;
+      border-radius: 16px;
+      background: #acc510;
+      /*The grenn border position */
+      margin-top: -13px;
+    }
+
+    .cat-white-box-remaining-txt-container {
+      display: flex;
+      width: 676px;
+      padding-top: 40px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .cat-white-box-remaining-txt {
+      align-self: stretch;
+      color: var(--07-grey-700, #454f5b);
+      text-align: center;
+      font-feature-settings: "pwid" on;
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      /* remove default margin*/
+      margin: 0;
+    }
+
+    .cat-img-section-container {
+      display: flex;
+      padding: 40px 60px 60px 60px;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+    }
+
+    .cat-table-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 16px;
+      border: 3px solid var(--Brown, #524024);
+      background: linear-gradient(0deg, #fff 0%, #fff 100%), #f4f4f4;
+      box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .cat-table-header {
+      border-top-left-radius: 13px;
+      border-top-right-radius: 13px;
+      display: flex;
+      padding: 20px 40px;
+      justify-content: center;
+      align-items: center;
+      align-self: stretch;
+      background: var(--Golden-Gradient,
+          linear-gradient(90deg,
+            #e3b73a 0%,
+            #ffebb4 47.4%,
+            rgba(227, 183, 58, 0.85) 100%));
+    }
+
+    .cat-table-header-txt {
+      color: var(--Brown, #524024);
+      text-align: center;
+      font-feature-settings: "pwid" on;
+
+      /* NS 30/App NS 30|34 Medium */
+      font-family: Noto Sans TC;
+      font-size: 30px;
+      font-style: normal;
+      /*font-weight is weird*/
+      font-weight: 500;
+      line-height: 34px;
+      /* 113.333% */
+    }
+
+    .cat-photo-grid-container {
+      display: flex;
+      padding: 40px 60px;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 40px;
+      align-self: stretch;
+      flex-wrap: wrap;
+    }
+
+    .single-cat-photo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .cat-img-circle {
+      width: 120px;
+      height: 120px;
+      flex-shrink: 0;
+
+      /* border-radius: 202px;
+      background: var(--09-transparent-06-grey-16, rgba(145, 158, 171, 0.16));
+      position: relative; */
+    }
+
+    /*Single cat image container*/
+    .cat-img {
+      width: 96px;
+      height: 96px;
+      background: url("calbee.png");
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    .cat-description {
+      align-self: stretch;
+      color: var(--07-grey-900, #161c24);
+      text-align: center;
+      font-feature-settings: "pwid" on;
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    /* Hot Pick Session */
+    .highlight-title-row2 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2px;
+    }
+
+    .hot-pick-grid-container {
+      display: flex;
+      padding: 40px;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      align-self: stretch;
+
+    }
+
+    .hot-pick-row-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+    }
+
+    .hot-pick-cat-txt {
+      color: var(--Brown, #524024);
+      text-align: center;
+      font-feature-settings: 'pwid' on;
+      /* NS 18/App NS 18|22 Medium */
+      font-family: Noto Sans TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+      /* 122.222% */
+    }
+
+    .hot-pick-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .hot-pick-image {
+      width: 120px;
+      height: 120px;
+    }
+
+    .store-voucher-grid-container {
+      display: flex;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      align-self: stretch;
+    }
+
+    .store-voucher-row-container {
+      display: flex;
+      padding: 12px 24px;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+      border-radius: 16px;
+      border: 1px solid var(--14-others-divider, rgba(145, 158, 171, 0.24));
+      opacity: 0.8;
+      background: var(--07-grey-200, #f4f6f8);
+    }
+
+    .shop-logo-txt-container {
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1 0 0;
+    }
+
+    .shop-logo {
+      width: 112px;
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .shop-name {
+      margin: 0;
+      color: #000;
+      font-feature-settings: "pwid" on;
+
+      /* NS 24/App NS 24|28 Medium */
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      /* 116.667% */
+    }
+
+    .threshold-txt {
+      margin: 0;
+      color: #000;
+      font-feature-settings: "pwid" on;
+
+      /* NS 24/App NS 24|28 Regular */
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      /* 116.667% */
+    }
+
+    .offer-row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .discount_icon {
+      width: 28px;
+      height: 28px;
+    }
+
+    .offer-txt {
+      margin: 0;
+      color: var(--Pink, #d9145d);
+      font-feature-settings: "pwid" on;
+
+      /* NS 24/App NS 24|28 Regular */
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      /* 116.667% */
+    }
+
+    .voucher-button {
+      display: flex;
+      padding: 8px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      background: var(--green-green-3, #005D55);
+      color: var(--bw-white-1, #FFF);
+      font-feature-settings: 'pwid' on;
+
+      /* NS 24/App NS 24|28 Regular */
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      /* 116.667% */
+    }
+
+    /* POS Session */
+    .highlight-title-row-POS {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+
+    }
+
+    .get-discount-now-txt {
+      color: var(--Pink, #D9145D);
+      font-feature-settings: 'pwid' on;
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    /* Store logo session */
+    .store-logo-grid-container {
+      display: flex;
+      padding: 40px;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 40px;
+      align-self: stretch;
+      flex-wrap: wrap;
+    }
+
+    .store-logo-container {
+      display: flex;
+      width: 148px;
+      height: 74px;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .hot-store-logo {
+      width: 148px;
+      height: 74px;
+    }
+
+    .highlight-title-row-steps {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    /* Steps Session */
+    .steps-guide-container {
+      display: flex;
+      padding: 40px 40px 60px 40px;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+    }
+
+    .steps-guide-row {
+      display: flex;
+      padding: 40px;
+      align-items: flex-start;
+      gap: 60px;
+      align-self: stretch;
+      border-radius: 16px;
+      border: 1px solid var(--14-others-divider, rgba(145, 158, 171, 0.24));
+      background: #F4F4F4;
+    }
+
+    .single-step-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      flex: 1 0 0;
+    }
+
+    .step-guide-txt-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      align-self: stretch;
+
+    }
+
+    .step-guide-txt-number {
+      margin: 0;
+      color: var(--Brown, #524024);
+      text-align: center;
+      font-feature-settings: 'pwid' on;
+      font-family: Noto Sans TC;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+      /* 100% */
+    }
+
+    .step-guide-full-description {
+      margin: 0;
+      align-self: stretch;
+      color: var(--Brown, #524024);
+      text-align: center;
+      font-feature-settings: 'pwid' on;
+      font-family: Noto Sans TC;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+    }
+
+    .screencap-step1 {
+      width: 320px;
+      height: 660px;
+
+    }
+
+    .divider {
+      width: 1px;
+      height: 846.033px;
+      background: rgba(145, 158, 171, 0.24);
+    }
+
+    .footer-session-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+    }
+
+    .footer-heading-txt {
+      margin: 0;
+      color: var(--bw-white-1, #FFF);
+      font-feature-settings: 'pwid' on;
+
+      /* NS 28/App NS 28|32 Black */
+      font-family: Noto Sans TC;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 32px;
+      /* 114.286% */
+    }
+
+    .details-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .date-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .button-details {
+      display: flex;
+      padding: 6px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 52px;
+      background: var(--bw-white-1, #FFF);
+      color: var(--green-green-3, #005D55);
+      text-align: center;
+      font-feature-settings: 'pwid' on;
+
+      /* NS 18/App NS 18|22 Medium */
+      font-family: Noto Sans TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+      /* 122.222% */
+    }
+
+    .details-txt {
+      margin: 0;
+      color: var(--bw-white-1, #FFF);
+      text-align: center;
+      font-feature-settings: 'pwid' on;
+
+      /* NS 18/App NS 18|22 Regular */
+      font-family: Noto Sans TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      /* 122.222% */
+
+    }
+
+    .arrow-icon {
+      display: flex;
+      width: 20px;
+      height: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="banner_image.jpg" alt="" class="banner">
+    <div class="container_bg_image">
+      <!-- Header Session -->
+      <div class="header-container">
+        <div class="title-container">
+          <div class="title-txt">【HKTVmall優惠懶人包】
+          </div>
+          <div class="title-txt">11月發放！「阿媽都話正 全民大派$3,000」</div>
+        </div>
+        <div class="subtitle-container">
+          <div class="subtitle-txt">現金券登記／申請資格 ｜ 人氣旗鑑店名單一覽</div>
+
+        </div>
+
+
+      </div>
+      <!-- Body Session -->
+      <div class="body-container">
+        <div class="body-txt">
+          為答謝大家支持，HKTVmall將於2023年11月2日至12月31日期間，推出史無前例超震撼的購物優惠，每個帳戶均可獲得$3000現金券，真正幫你慳到盡！領取現金券的方法超簡單，只需綁定住宅地址，即送你HKTVmall專屬現金券，呢鋪真係阿媽都話正！
+        </div>
+      </div>
+      <!-- Content Session -->
+      <div class="content-container">
+        <!-- Single Button -->
+        <!-- HKTVmall大派$3000 照顧你日常所需 -->
+        <a href="#all-yr-need">
+          <div class="single-content-container">
+            <div class="content-btn-txt">HKTVmall大派$3000 照顧你日常所需</div>
+            <img src="arrow_forward.svg" alt="arrow forward" class="arrow-icon-forward">
+          </div>
+        </a>
+        <!-- 精彩優惠逐個捉！更多商品種類，滿足你日常所需！ -->
+        <a href="#satify-u">
+          <div class="single-content-container">
+            <div class="content-btn-txt">精彩優惠逐個捉！更多商品種類，滿足你日常所需！</div>
+            <img src="arrow_forward.svg" alt="arrow forward" class="arrow-icon-forward">
+          </div>
+        </a>
+        <!-- 大曬冷！HKTVmall 品牌旗艦店優惠 -->
+        <a href="#many-store">
+          <div class="single-content-container">
+            <div class="content-btn-txt">大曬冷！HKTVmall 品牌旗艦店優惠</div>
+            <img src="arrow_forward.svg" alt="arrow forward" class="arrow-icon-forward">
+          </div>
+        </a>
+        <!-- 新、舊客都有獎！ 簡單兩步輕鬆獲取現金券 -->
+        <a href="#many-voucher">
+          <div class="single-content-container">
+            <div class="content-btn-txt">新、舊客都有獎！ 簡單兩步輕鬆獲取現金券</div>
+            <img src="arrow_forward.svg" alt="arrow forward" class="arrow-icon-forward">
+          </div>
+        </a>
+        <!-- 「阿媽都話正 全民大派$3,000」詳情 -->
+        <a href="#campaign-details-here">
+          <div class="single-content-container">
+            <div class="content-btn-txt">新、舊客都有獎！ 簡單兩步輕鬆獲取現金券</div>
+            <img src="arrow_forward.svg" alt="arrow forward" class="arrow-icon-forward">
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="bg-color">
+      <!-- Cat Session -->
+      <div class="cat-white-box" id="cat-white-box-1">
+        <div class="cat-white-box-txt-container">
+          <div class="cat-white-box-txt-header">
+            <div class="highlight-title-row">
+              <div>
+                <h2 class="highlighted-title" id="all-yr-need">HKTVmall大派$3000</h2>
+                <div class="higlighted-title-green-border"></div>
+              </div>
+              <h2 class="highlighted-title">照顧你日常所需</h2>
+            </div>
+          </div>
+          <div class="cat-white-box-remaining-txt-container">
+            <p class="cat-white-box-remaining-txt">
+              作為全港最大的網購平台，生活百貨應有盡有！是次優惠活動，涵蓋超過32個生活必需品類別，當中包括阿媽都話正的急凍肉類及海鮮、家居清潔用品、保健品、護膚品、隱形眼鏡及香水等產品，優惠券面值分別為買$150即減$50；或買$300即減$100，相等於直劈到7折，從未見過超市貨可以減咁多！真係唔怕你用，只怕你唔夠用！
+            </p>
+            </p>
+          </div>
+          <div class="cat-img-section-container">
+            <div class="cat-table-container">
+              <div class="cat-table-header">
+                <h3 class="cat-table-header-txt">
+                  點擊即睇 9 大人氣產品類別
+                </h3>
+              </div>
+              <div class="cat-photo-grid-container">
+                <!-- One Single Cat -->
+                <div class="single-cat-photo-container">
+                  <img src="Category Thumbnail.png" class="cat-img-circle">
+                  <div class="cat-description">薯片 蝦片</div>
+                </div>
+                <div class="single-cat-photo-container">
+                  <img src="Category Thumbnail.png" class="cat-img-circle">
+                  <div class="cat-description">薯片 蝦片</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hot pick Session -->
+      <div class="cat-white-box">
+        <div class="cat-white-box-txt-container">
+          <div class="cat-white-box-txt-header">
+            <div class="highlight-title-row2">
+              <div>
+                <h2 class="highlighted-title" id="satify-u">精彩優惠</h2>
+                <div class="higlighted-title-green-border"></div>
+              </div>
+              <h2 class="highlighted-title">逐個捉！</h2>
+            </div>
+            <h2 class="highlighted-title">更多商品種類，滿足你日常所需！</h2>
+          </div>
+          <div class="cat-white-box-remaining-txt-container">
+            <p class="cat-white-box-remaining-txt">
+              生活除了是柴米油鹽外，都要為自己尋找生活樂趣，或許是星期五晚在家小酌兩杯；也可以是週末時跟親友行行山，做運動，來釋放壓力。更多精彩優惠等你來發掘！
+            </p>
+          </div>
+          <div class="cat-img-section-container">
+            <div class="cat-table-container">
+              <div class="cat-table-header">
+                <h3 class="cat-table-header-txt">
+                  小編精選
+                </h3>
+              </div>
+              <div class="hot-pick-grid-container">
+                <!-- One Single Cat -->
+                <div class="hot-pick-row-container">
+                  <div class="hot-pick-cat-txt">行山裝備 ＋ 運動鞋</div>
+                  <div class="hot-pick-image-container">
+                    <img src="Hot Pick.png" alt="Hot pick" class="hot-pick-image">
+                    <img src="Hot Pick.png" alt="Hot pick" class="hot-pick-image">
+                    <img src="Hot Pick.png" alt="Hot pick" class="hot-pick-image">
+                    <img src="Hot Pick.png" alt="Hot pick" class="hot-pick-image">
+                    <img src="Hot Pick.png" alt="Hot pick" class="hot-pick-image">
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Store Session -->
+      <div class="cat-white-box">
+        <div class="cat-white-box-txt-container">
+          <div class="cat-white-box-txt-header">
+            <div class="highlight-title-row">
+              <h2 class="highlighted-title" id="many-store">大曬冷！</h2>
+              <div>
+                <h2 class="highlighted-title">HKTVmall 品牌旗艦店優惠</h2>
+                <div class="higlighted-title-green-border"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cat-white-box-remaining-txt-container">
+            <p class="cat-white-box-remaining-txt">
+              講到史無前例，優惠緊係一浪接一浪！HKTVmall
+              17間知名品牌旗艦店送出現金券，折扣力度可謂絕無手軟！
+            </p>
+            <p class="cat-white-box-remaining-txt">
+              如深受女士追棒的電器品牌Dyson最少９折、Puma波鞋、受大人細路熱愛的LEGO、Pampers尿片滿額勁減$100，仲有鏡粉必買電子品牌Samsung激減$300！
+            </p>
+          </div>
+          <div class="cat-img-section-container">
+            <div class="cat-table-container">
+              <div class="cat-table-header">
+                <h3 class="cat-table-header-txt">人氣品牌旗艦店</h3>
+              </div>
+              <div class="store-voucher-grid-container">
+                <!-- One Single Store voucher -->
+                <div class="store-voucher-row-container">
+                  <div class="shop-logo-txt-container">
+                    <img src="puma.png" alt="puma" class="shop-logo" />
+                    <p class="shop-name">Puma 官方旗艦店</p>
+                  </div>
+                  <p class="threshold-txt">買滿$350</p>
+                  <div class="offer-row">
+                    <img src="local_offer.svg" alt="discount_icon" class="discount_icon">
+                    <p class="offer-txt">減$100</p>
+                  </div>
+                  <button class="voucher-button">258get3k</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Steps Session -->
+      <div class="cat-white-box">
+        <div class="cat-white-box-txt-container">
+          <div class="cat-white-box-txt-header">
+            <div class="highlight-title-row-steps">
+              <h2 class="highlighted-title" id="many-voucher">新、舊客都有獎！</h2>
+              <h2 class="highlighted-title">簡單兩步</h2>
+              <div>
+                <h2 class="highlighted-title">輕鬆獲取現金券</h2>
+                <div class="higlighted-title-green-border"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="steps-guide-container">
+            <div class="steps-guide-row">
+              <!-- One Single Steps -->
+              <div class="single-step-column">
+                <div class="step-guide-txt-container">
+                  <p class="step-guide-txt-number">
+                    步驟 1
+                  </p>
+                  <p class="step-guide-full-description">下載HKTVmall App，登入帳戶後輸入住址，即可獲分發個人專屬現金券。</p>
+                </div>
+                <img
+                  src="https://image.marketing.hktvmall.com/lib/fe6415707c62017f7417/m/1/0dff3ed9-4684-486c-b038-f481c94a3a7f.png"
+                  alt="Step 1" class="screencap-step1">
+              </div>
+              <div class="divider"></div>
+              <div class="single-step-column">
+                <div class="step-guide-txt-container">
+                  <p class="step-guide-txt-number">
+                    步驟 2
+                  </p>
+                  <p class="step-guide-full-description">活動期間，用戶可直接於HKTVmall App內使用。</p>
+                </div>
+                <img class="screencap-step1"
+                  src="https://image.marketing.hktvmall.com/lib/fe6415707c62017f7417/m/1/91cb3300-987c-4265-b491-2dfad3018c5f.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Session -->
+      <div class="footer-session-container">
+        <p class="footer-heading-txt" id="campaign-details-here">「阿媽都話正 全民大派$3,000」詳情</p>
+        <div class="details-column">
+          <div class="date-row">
+            <div class="button-details">活動日期</div>
+            <p class="details-txt">即日起 ~ 2023.12.31</p>
+          </div>
+          <div class="date-row">
+            <div class="button-details">活動連結</div>
+            <p class="details-txt">點擊立即參加活動</p>
+            <img src="arrow_back_ios.svg" alt="arrow" class="arrow-icon">
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="bg-color-footer"></div>
+  </div>
+  </div>
+</body>
+
+</html>
